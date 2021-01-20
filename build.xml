@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<project name="havis.net.server.http" default="publish">
+
+	<property file="${basedir}/build.properties" />
+
+	<import>
+		<url url="${ivy.url}/ant/default.xml" />
+	</import>
+
+	<target name="clean-cache" description="Cleans the ivy cache">
+		<clean-cache />
+	</target>
+
+	<target name="clean-all" description="Cleans the project and ivy cache">
+		<clean-all />
+	</target>
+
+	<target name="jar" description="Builds a JAR file from the project.">
+		<compile dst="${build.dir.classes}">
+			<src path="${src.main.dir}" />
+		</compile>
+		<module-info />
+		<jar-bin />
+	</target>
+
+	<target name="publish" depends="jar" description="Publishes the JAR to the repository">
+		<publish jar="false" app="false" />
+	</target>
+</project>

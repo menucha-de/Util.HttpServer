@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+	<info organisation="havis/net/server" module="http" />
+
+	<configurations>
+		<conf name="default" />
+		<conf name="module" />
+		<conf name="doc" />
+		<conf name="src" />
+	</configurations>
+
+	<publications>
+		<artifact name="havis.net.server.http" conf="default,module" />
+		<artifact name="havis.net.server.http-javadoc" conf="doc" />
+		<artifact name="havis.net.server.http-sources" conf="src" />
+	</publications>
+
+	<dependencies>
+		<dependency org="javax/xml/bind" name="jaxb-api" rev="${jaxb.version}" conf="module" />
+		<dependency org="com/sun/xml/bind" name="jaxb-impl" rev="${jaxb.version}" conf="default,module" />
+		<dependency org="javax/ws/rs" name="javax.ws.rs-api" rev="${javax.ws.rs-api.version}" conf="default,module" />
+		<dependency org="com/fasterxml/jackson/core" name="jackson-databind" rev="${jackson.version}" conf="default,module" />
+		<dependency org="com/fasterxml/jackson/jaxrs" name="jackson-jaxrs-base" rev="${jackson.version}" conf="default,module" />
+		<dependency org="com/fasterxml/jackson/module" name="jackson-module-jaxb-annotations" rev="${jackson.version}" conf="default,module" />
+		<dependency org="org/jboss/resteasy" name="resteasy-jdk-http" rev="${resteasy.version}" conf="default,module" />
+		<dependency org="org/jboss/resteasy" name="resteasy-jaxrs" rev="${resteasy.version}" conf="default,module" />
+		<dependency org="org/jboss/resteasy" name="resteasy-jaxb-provider" rev="${resteasy.version}" conf="default,module" />
+		<dependency org="org/jboss/resteasy" name="resteasy-jackson2-provider" rev="${resteasy.version}" conf="default,module" />
+	</dependencies>
+
+</ivy-module>

@@ -1,0 +1,30 @@
+Bundle-Name: Ha-VIS Http Service
+Bundle-SymbolicName: havis.net.server.http
+Bundle-Version: 2.6.1
+Implementation-Version: 2.6
+Bundle-ManifestVersion: 2
+Bundle-Vendor: HARTING IT_SD
+Bundle-Activator: havis.net.server.http.Activator
+Export-Package: 
+ havis.net.server.http,
+ havis.net.server.http.provider
+Import-Package: 
+ com.fasterxml.jackson.databind;resolution:=optional,
+ com.sun.net.httpserver,
+ javax.annotation.security,
+ javax.net.ssl;resolution:=optional,
+ javax.ws.rs,
+ javax.ws.rs.container,
+ javax.ws.rs.core,
+ javax.ws.rs.ext,
+ javax.xml.bind,
+ org.jboss.resteasy.plugins.providers,
+ org.jboss.resteasy.plugins.providers.jackson;resolution:=optional,
+ org.jboss.resteasy.plugins.providers.jaxb;resolution:=optional,
+ org.jboss.resteasy.plugins.providers.multipart;resolution:=optional,
+ org.jboss.resteasy.plugins.server.sun.http,
+ org.jboss.resteasy.spi,
+ org.jboss.resteasy.spi.metadata,
+ org.jboss.resteasy.util,
+ org.osgi.framework;resolution:=optional,
+ org.osgi.util.tracker;resolution:=optional
