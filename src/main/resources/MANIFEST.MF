@@ -1,7 +1,7 @@
 Bundle-Name: Ha-VIS Http Service
 Bundle-SymbolicName: havis.net.server.http
-Bundle-Version: 2.6.1
-Implementation-Version: 2.6
+Bundle-Version: 2.7.0
+Implementation-Version: 2.7
 Bundle-ManifestVersion: 2
 Bundle-Vendor: HARTING IT_SD
 Bundle-Activator: havis.net.server.http.Activator
