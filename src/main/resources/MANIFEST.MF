@@ -3,7 +3,7 @@ Bundle-SymbolicName: havis.net.server.http
 Bundle-Version: 2.7.0
 Implementation-Version: 2.7
 Bundle-ManifestVersion: 2
-Bundle-Vendor: HARTING IT_SD
+Bundle-Vendor: Menucha Team <info@menucha.de>
 Bundle-Activator: havis.net.server.http.Activator
 Export-Package: 
  havis.net.server.http,

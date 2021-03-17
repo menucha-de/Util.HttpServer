@@ -393,7 +393,7 @@ public class Authorization {
 				if (principal == null) {
 					String agent = exchange.getRequestHeaders().getFirst("User-agent");
 					if (authMode.isBasic() || agent != null && agent.contains("Gecko")) {
-						exchange.getResponseHeaders().set("WWW-Authenticate", "Basic realm=\"HARTING\"");
+						exchange.getResponseHeaders().set("WWW-Authenticate", "Basic realm=\"Menucha\"");
 						return null;
 					}
 				}

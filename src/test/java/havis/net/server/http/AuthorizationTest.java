@@ -96,7 +96,7 @@ public class AuthorizationTest {
 		List<String> value = responseHeaders.get("WWW-Authenticate");
 		Assert.assertNotNull(value);
 		Assert.assertEquals(1, value.size());
-		Assert.assertEquals("Basic realm=\"HARTING\"", value.get(0));
+		Assert.assertEquals("Basic realm=\"Menucha\"", value.get(0));
 
 		LinkedHashMap<String, Principal> sessions = getSessions();
 		Assert.assertEquals(0, sessions.size());
@@ -172,7 +172,7 @@ public class AuthorizationTest {
 		List<String> value = responseHeaders.get("WWW-Authenticate");
 		Assert.assertNotNull(value);
 		Assert.assertEquals(1, value.size());
-		Assert.assertEquals("Basic realm=\"HARTING\"", value.get(0));
+		Assert.assertEquals("Basic realm=\"Menucha\"", value.get(0));
 
 		LinkedHashMap<String, Principal> sessions = getSessions();
 		Assert.assertEquals(0, sessions.size());
@@ -666,7 +666,7 @@ public class AuthorizationTest {
 			List<String> value = responseHeaders.get("WWW-Authenticate");
 			Assert.assertNotNull(value);
 			Assert.assertEquals(1, value.size());
-			Assert.assertEquals("Basic realm=\"HARTING\"", value.get(0));
+			Assert.assertEquals("Basic realm=\"Menucha\"", value.get(0));
 		} else {
 			Assert.assertNotNull(principal);
 			Assert.assertEquals(expectedPrincipal, principal.getName());
@@ -749,7 +749,7 @@ public class AuthorizationTest {
 			List<String> value = responseHeaders.get("WWW-Authenticate");
 			Assert.assertNotNull(value);
 			Assert.assertEquals(1, value.size());
-			Assert.assertEquals("Basic realm=\"HARTING\"", value.get(0));
+			Assert.assertEquals("Basic realm=\"Menucha\"", value.get(0));
 
 			LinkedHashMap<String, Principal> sessions = getSessions();
 			Assert.assertEquals(0, sessions.size());
